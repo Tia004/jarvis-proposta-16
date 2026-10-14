@@ -1,0 +1,44 @@
+================================================================================
+AUDIT: NAVIGATION & ANCHOR INTEGRITY VERIFICATION
+Project: Veneto Case - Immobili Selezionati in Veneto (WH-16)
+Command: node scripts/audit_navigation.js
+Executed At: 2026-10-14T00:16:33.519Z
+Status: PASSED
+================================================================================
+
+1. HTTP ENDPOINT STATUS VERIFICATION:
+  [PASS] Homepage (Onepage) (/) -> HTTP 200 (Expected: 200)
+  [PASS] Privacy Policy (/privacy) -> HTTP 200 (Expected: 200)
+  [PASS] Cookie Policy (/cookie) -> HTTP 200 (Expected: 200)
+  [PASS] Termini e Condizioni (/termini) -> HTTP 200 (Expected: 200)
+  [PASS] XML Sitemap (/sitemap.xml) -> HTTP 200 (Expected: 200)
+  [PASS] Robots.txt (/robots.txt) -> HTTP 200 (Expected: 200)
+  [PASS] Custom 404 Not Found (/non-existent-page-check-404) -> HTTP 404 (Expected: 404)
+
+2. HOMEPAGE NAVIGATION ANCHORS & TARGET RESOLUTION:
+  [PASS] Anchor #immobili -> Target id="immobili" (Catalogo Immobili Selezionati): link=true, target=true
+  [PASS] Anchor #servizi -> Target id="servizi" (Filosofia Boutique & Servizi): link=true, target=true
+  [PASS] Anchor #processo -> Target id="processo" (Processo di Compravendita in 5 Fasi): link=true, target=true
+  [PASS] Anchor #filiali -> Target id="filiali" (Rete Territoriale 7 Filiali): link=true, target=true
+  [PASS] Anchor #recensioni -> Target id="recensioni" (Testimonianze Clienti Verificate): link=true, target=true
+  [PASS] Anchor #team -> Target id="team" (Consulenti e Referenti Verificati): link=true, target=true
+  [PASS] Anchor #contatti -> Target id="contatti" (Modulo Contatto & WhatsApp Diretto): link=true, target=true
+
+3. ACCESSIBILITY NAVIGATION TARGETS:
+  [PASS] Skip to content mechanism: skipLink=true, mainTarget=true
+
+4. STICKY HEADER & MOBILE DRAWER INTEGRITY:
+  [PASS] Sticky Header CSS/classes detected: true
+  [PASS] Semantic <nav> with aria-label detected: true
+  [PASS] Mobile menu keyboard-accessible toggle detected: true
+
+5. LEGAL FOOTER LINKS INTEGRITY:
+  [PASS] Link to /privacy present in footer
+  [PASS] Link to /cookie present in footer
+  [PASS] Link to /termini present in footer
+
+6. OVERALL VERIFICATION:
+  All 7 anchor links resolve to matching DOM targets.
+  Sticky header and skip-to-content accessible pathways fully functional.
+  Zero broken internal links detected.
+================================================================================

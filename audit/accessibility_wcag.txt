@@ -1,0 +1,48 @@
+================================================================================
+AUDIT: ACCESSIBILITY (WCAG 2.2 AA) & ICON INTEGRITY VERIFICATION
+Project: Veneto Case - Immobili Selezionati in Veneto (WH-16)
+Command: node scripts/audit_a11y.js
+Executed At: 2026-10-14T00:16:33.700Z
+Status: PASSED
+================================================================================
+
+1. ZERO SVG & ZERO EMOJI COMPLIANCE:
+  Rendered <svg> tags count: 0
+  [PASS] Strict Zero-SVG constraint satisfied across rendered DOM.
+  Rendered Emoji count: 0
+  [PASS] Strict Zero-Emoji constraint satisfied across rendered DOM.
+  Bootstrap Icons font icon usages: 219
+  [PASS] Free font/CSS icon package (Bootstrap Icons webfont) implemented without inline SVGs.
+
+2. COLOR CONTRAST RATIOS (WCAG AA >= 4.5:1 for normal text):
+  [PASS] Terracotta (#C84814) on Pure White (#FFFFFF): 4.78:1 (Required >= 4.5:1)
+  [PASS] White (#FFFFFF) on Terracotta (#C84814): 4.78:1 (Required >= 4.5:1)
+  [PASS] Charcoal Text (#333333) on Pure White (#FFFFFF): 12.63:1 (Required >= 4.5:1)
+  [PASS] Muted Text (#4A4A4A) on Pure White (#FFFFFF): 8.86:1 (Required >= 4.5:1)
+  [PASS] Secondary Charcoal (#222222) on Pure White (#FFFFFF): 15.91:1 (Required >= 4.5:1)
+
+3. KEYBOARD ACCESSIBILITY & FOCUS MANAGEMENT:
+  [PASS] Prominent :focus-visible ring defined in CSS: true
+  [PASS] Skip to content navigation link present: true
+  [PASS] Main content target landmark id="main-content" present: true
+
+4. ARIA LANDMARKS & ACCESSIBLE DIALOGS:
+  [PASS] Header banner landmark: true
+  [PASS] Main navigation landmark: true
+  [PASS] Main content landmark: true
+  [PASS] Footer contentinfo landmark: true
+  [PASS] Mobile drawer dialog role: true
+  [PASS] Property modal dialog role: true
+  [PASS] Modal aria-modal="true": true
+  [PASS] Modal aria-labelledby: true
+  [PASS] Modal aria-describedby: true
+  [PASS] Decorative icons aria-hidden="true": true
+
+5. PREFERS-REDUCED-MOTION SUPPORT:
+  [PASS] Prefers-reduced-motion media query disarms transitions and animations for sensitive users.
+
+6. SUMMARY:
+  Zero inline SVG and Zero Emoji rules strictly honored.
+  All tested color contrast pairings meet or exceed WCAG 2.2 AA thresholds.
+  Keyboard focus traps, landmarks, and aria attributes fully intact.
+================================================================================

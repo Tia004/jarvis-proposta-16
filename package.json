@@ -1,0 +1,25 @@
+{
+  "name": "veneto-case-immobili-selezionati",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:audit": "node scripts/audit_navigation.js && node scripts/audit_form.js && node scripts/audit_responsive.js && node scripts/audit_a11y.js && node scripts/audit_seo.js && node scripts/audit_security.js && node scripts/audit_secrets.js && node scripts/audit_performance.js"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "next": "^16.4.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.4.5"
+  }
+}

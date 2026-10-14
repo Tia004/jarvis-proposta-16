@@ -1,0 +1,46 @@
+================================================================================
+AUDIT: PERFORMANCE, MEMORY & ASSET EFFICIENCY AUDIT
+Project: Veneto Case - Immobili Selezionati in Veneto (WH-16)
+Command: node scripts/audit_performance.js
+Executed At: 2026-10-14T00:16:40.078Z
+Status: PASSED
+================================================================================
+
+1. TIME TO FIRST BYTE (TTFB) & PRE-RENDERED STATIC SERVING:
+  [PASS] Route /              -> 11.99ms | Size: 97.1 KB | Status: 200
+  [PASS] Route /privacy       -> 1.19ms | Size: 31.6 KB | Status: 200
+  [PASS] Route /cookie        -> 0.78ms | Size: 30.4 KB | Status: 200
+  [PASS] Route /termini       -> 0.81ms | Size: 30.1 KB | Status: 200
+  [PASS] Route /sitemap.xml   -> 1.00ms | Size: 0.7 KB | Status: 200
+  [PASS] Route /robots.txt    -> 0.76ms | Size: 0.1 KB | Status: 200
+
+2. STATIC GENERATION BUILD ASSETS (.next/static):
+  Total compiled client bundle footprint: 1087.6 KB
+  [PASS] Total client bundles under 3MB threshold.
+
+3. RUNTIME MEMORY PROFILE:
+  Node.js RSS Memory:       56.30 MB
+  Node.js Heap Total:       11.28 MB
+  Node.js Heap Used:        7.70 MB
+  [PASS] Memory footprint well within standard 250MB micro-instance limit.
+
+4. IMAGE & ASSET EFFICIENCY:
+  Curated Architectural Assets in /public/images: 8 files
+    - hero_villa.jpg                 849.4 KB
+    - og_cover.jpg                   849.4 KB
+    - prop_adria.jpg                 849.4 KB
+    - prop_cantarana.jpg             864.0 KB
+    - prop_mira.jpg                  1196.6 KB
+    - prop_polverarabifamiliare.jpg  1196.6 KB
+    - prop_saonara.jpg               864.0 KB
+    - prop_vigonzaterrazzo.jpg       864.0 KB
+  [PASS] Total static image assets: 7533.5 KB (Under 10MB budget)
+
+5. WEBFONT PACKAGING VS MULTIPLE SVG REQUESTS:
+  - Icons served via Bootstrap Icons CSS webfont format (WOFF2/WOFF).
+  - Single HTTP font file cached in browser memory replaces 200+ individual SVG HTTP requests or heavy DOM nodes.
+
+6. SUMMARY:
+  Ultra-fast response times on all static routes (< 30ms average TTFB).
+  Minimal memory consumption and efficient asset bundling.
+================================================================================
