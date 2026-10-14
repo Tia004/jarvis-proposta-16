@@ -156,7 +156,7 @@ export default function MortgageCalculator() {
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.4rem 0' }}>
                   <span>Totale Interessi Stimati:</span>
-                  <strong style={{ color: '#FED7AA' }}>€ {calculation.totalInterest.toLocaleString('it-IT')}</strong>
+                  <strong style={{ color: '#84D5C6' }}>€ {calculation.totalInterest.toLocaleString('it-IT')}</strong>
                 </div>
               </div>
 

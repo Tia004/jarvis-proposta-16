@@ -2,17 +2,17 @@
 AUDIT: RESPONSIVE DESIGN (320px TO 4K) VERIFICATION
 Project: Veneto Case - Immobili Selezionati in Veneto (WH-16)
 Command: node scripts/audit_responsive.js
-Executed At: 2026-10-14T00:16:33.641Z
+Executed At: 2026-10-14T00:57:03.469Z
 Status: PASSED
 ================================================================================
 
 1. FLUID TYPOGRAPHY & SPACING SYSTEM (clamp):
   Detected 18 fluid clamp() expressions in CSS.
-    - Clamp 1: clamp(3rem, 6vw, 6rem)
+    - Clamp 1: clamp(3.5rem, 6vw, 6.5rem)
     - Clamp 2: clamp(2.25rem, 4.5vw, 3.75rem)
     - Clamp 3: clamp(1.85rem, 3.2vw, 2.75rem)
-    - Clamp 4: clamp(1.4rem, 2.2vw, 2rem)
-    - Clamp 5: clamp(1.15rem, 1.5vw, 1.45rem)
+    - Clamp 4: clamp(1.35rem, 2.2vw, 1.9rem)
+    - Clamp 5: clamp(1.1rem, 1.5vw, 1.35rem)
   [PASS] Fluid typography scaling active across all screen sizes.
 
 2. RESPONSIVE BREAKPOINT GRID TOKENS:

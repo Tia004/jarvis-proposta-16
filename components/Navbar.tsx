@@ -42,14 +42,13 @@ export default function Navbar() {
   }, [mobileMenuOpen]);
 
   const navLinks = [
-    { label: 'Home', href: '#home', id: 'home' },
-    { label: 'Immobili Selezionati', href: '#immobili', id: 'immobili' },
-    { label: 'Metodo & Processo', href: '#processo', id: 'processo' },
-    { label: 'Servizi Boutique', href: '#servizi', id: 'servizi' },
-    { label: 'Filiali Veneto', href: '#filiali', id: 'filiali' },
-    { label: 'Recensioni Verificate', href: '#recensioni', id: 'recensioni' },
-    { label: 'Team Referenti', href: '#team', id: 'team' },
-    { label: 'Calcola Mutuo', href: '#calcolatore', id: 'calcolatore' },
+    { label: 'Immobili', href: '#immobili', id: 'immobili' },
+    { label: 'Filiali', href: '#filiali', id: 'filiali' },
+    { label: 'Metodo', href: '#processo', id: 'processo' },
+    { label: 'Servizi', href: '#servizi', id: 'servizi' },
+    { label: 'Recensioni', href: '#recensioni', id: 'recensioni' },
+    { label: 'Team', href: '#team', id: 'team' },
+    { label: 'Calcolatore', href: '#calcolatore', id: 'calcolatore' },
     { label: 'Contatti', href: '#contatti', id: 'contatti' },
   ];
 
@@ -65,9 +64,9 @@ export default function Navbar() {
               </div>
               <div className="brand-text-block">
                 <span className="brand-name">
-                  Veneto <span>Case</span>
+                  Veneto Case
                 </span>
-                <span className="brand-tagline">Immobili selezionati in Veneto</span>
+                <span className="brand-tagline">Immobili Selezionati</span>
               </div>
             </Link>
 
@@ -93,7 +92,7 @@ export default function Navbar() {
                 href="https://wa.me/393279474598?text=Buongiorno%20Veneto%20Case,%20desidero%20informazioni%20sugli%20immobili%20selezionati"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary btn-sm"
+                className="btn btn-primary btn-sm nav-cta-btn"
                 aria-label="Contatta su WhatsApp al 3279474598"
               >
                 <i className="bi bi-whatsapp" aria-hidden="true"></i>

@@ -67,11 +67,11 @@ async function run() {
 
   log.push('\n2. COLOR CONTRAST RATIOS (WCAG AA >= 4.5:1 for normal text):');
   const pairs = [
-    { name: 'Terracotta (#C84814) on Pure White (#FFFFFF)', c1: '#C84814', c2: '#FFFFFF', min: 4.5 },
-    { name: 'White (#FFFFFF) on Terracotta (#C84814)', c1: '#FFFFFF', c2: '#C84814', min: 4.5 },
-    { name: 'Charcoal Text (#333333) on Pure White (#FFFFFF)', c1: '#333333', c2: '#FFFFFF', min: 4.5 },
-    { name: 'Muted Text (#4A4A4A) on Pure White (#FFFFFF)', c1: '#4A4A4A', c2: '#FFFFFF', min: 4.5 },
-    { name: 'Secondary Charcoal (#222222) on Pure White (#FFFFFF)', c1: '#222222', c2: '#FFFFFF', min: 4.5 }
+    { name: 'Graphite Charcoal (#2E322F) on Pure White (#FFFFFF)', c1: '#2E322F', c2: '#FFFFFF', min: 4.5 },
+    { name: 'White (#FFFFFF) on Graphite Charcoal (#2E322F)', c1: '#FFFFFF', c2: '#2E322F', min: 4.5 },
+    { name: 'Lagoon Emerald (#0F6F63) on Pure White (#FFFFFF)', c1: '#0F6F63', c2: '#FFFFFF', min: 4.5 },
+    { name: 'Dark Slate Text (#383C39) on Pure White (#FFFFFF)', c1: '#383C39', c2: '#FFFFFF', min: 4.5 },
+    { name: 'Graphite Charcoal (#2E322F) on Travertine (#F7F7F5)', c1: '#2E322F', c2: '#F7F7F5', min: 4.5 }
   ];
 
   for (const p of pairs) {

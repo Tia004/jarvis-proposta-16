@@ -2,24 +2,24 @@
 AUDIT: PERFORMANCE, MEMORY & ASSET EFFICIENCY AUDIT
 Project: Veneto Case - Immobili Selezionati in Veneto (WH-16)
 Command: node scripts/audit_performance.js
-Executed At: 2026-10-14T00:16:40.078Z
+Executed At: 2026-10-14T00:57:09.919Z
 Status: PASSED
 ================================================================================
 
 1. TIME TO FIRST BYTE (TTFB) & PRE-RENDERED STATIC SERVING:
-  [PASS] Route /              -> 11.99ms | Size: 97.1 KB | Status: 200
-  [PASS] Route /privacy       -> 1.19ms | Size: 31.6 KB | Status: 200
-  [PASS] Route /cookie        -> 0.78ms | Size: 30.4 KB | Status: 200
-  [PASS] Route /termini       -> 0.81ms | Size: 30.1 KB | Status: 200
-  [PASS] Route /sitemap.xml   -> 1.00ms | Size: 0.7 KB | Status: 200
-  [PASS] Route /robots.txt    -> 0.76ms | Size: 0.1 KB | Status: 200
+  [PASS] Route /              -> 12.92ms | Size: 96.8 KB | Status: 200
+  [PASS] Route /privacy       -> 1.71ms | Size: 31.3 KB | Status: 200
+  [PASS] Route /cookie        -> 1.28ms | Size: 30.1 KB | Status: 200
+  [PASS] Route /termini       -> 1.07ms | Size: 29.7 KB | Status: 200
+  [PASS] Route /sitemap.xml   -> 1.77ms | Size: 0.7 KB | Status: 200
+  [PASS] Route /robots.txt    -> 2.12ms | Size: 0.1 KB | Status: 200
 
 2. STATIC GENERATION BUILD ASSETS (.next/static):
-  Total compiled client bundle footprint: 1087.6 KB
+  Total compiled client bundle footprint: 1089.2 KB
   [PASS] Total client bundles under 3MB threshold.
 
 3. RUNTIME MEMORY PROFILE:
-  Node.js RSS Memory:       56.30 MB
+  Node.js RSS Memory:       56.84 MB
   Node.js Heap Total:       11.28 MB
   Node.js Heap Used:        7.70 MB
   [PASS] Memory footprint well within standard 250MB micro-instance limit.

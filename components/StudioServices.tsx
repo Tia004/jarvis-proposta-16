@@ -89,13 +89,14 @@ export default function StudioServices() {
           <div style={{ maxWidth: '640px' }}>
             <span
               style={{
-                color: '#FED7AA',
+                color: '#84D5C6',
                 fontSize: '0.8rem',
                 fontWeight: 700,
                 textTransform: 'uppercase',
                 letterSpacing: '0.08em',
                 display: 'block',
-                marginBottom: '0.5rem'
+                marginBottom: '0.5rem',
+                fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace'
               }}
             >
               Sei proprietario di un immobile in Veneto?

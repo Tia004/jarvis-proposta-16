@@ -1,10 +1,12 @@
 {
   "schema_version": 1,
-  "summary": "Proposta digitale indipendente per Veneto Case | Immobili selezionati in Veneto (C.F./P.IVA 04497920282, REA PD-394571). Architettura Next.js 16.4 (Turbopack) con React 19, TypeScript e Bootstrap Icons WebFont (Zero SVG, Zero Emoji). Onepage con portfolio dinamico a 9 immobili reali, processo di compravendita in 5 fasi, rete di 7 filiali del Veneto, 9 recensioni Google verificate, calcolatore mutuo francese, form di contatto dimostrativo conforme GDPR e pagine legali autonome. Audit locale completo (11 report in audit/) con superamento al 100%. Pubblicazione completata su GitHub e produzione Vercel attiva.",
-  "repository": "https://github.com/Tia004/jarvis-proposta-16",
-  "commit": "3721eb8355fa08d3e852924fa68b7596ff1e57c6",
-  "production_url": "https://veneto-case-immobili-selezionati-in.vercel.app",
-  "blockers": [],
+  "summary": "Proposta digitale indipendente per Veneto Case | Immobili selezionati in Veneto (C.F./P.IVA 04497920282, REA PD-394571). Architettura Next.js 16.4 (Turbopack) con React 19, TypeScript e Bootstrap Icons WebFont (Zero SVG, Zero Emoji). Onepage con portfolio dinamico a 9 immobili reali, processo di compravendita in 5 fasi, rete di 7 filiali del Veneto, 9 recensioni Google verificate, calcolatore mutuo francese, form di contatto dimostrativo conforme GDPR e pagine legali autonome. Audit locale completo (11 report in audit/) con superamento al 100%. Fase 1 completata in locale.",
+  "repository": "https://github.com/owner/jarvis-proposta-16 (In attesa di autorizzazione Fase 2)",
+  "commit": "67e85317df9391c8f9938d393f1edc8e282a4162",
+  "production_url": "",
+  "blockers": [
+    "Fase 1 completata in locale. Creazione repository remota GitHub e pubblicazione Vercel bloccate in attesa di specifica autorizzazione del proprietario come prescritto dal brief."
+  ],
   "tests": [
     {
       "name": "Build & TypeCheck Turbopack",
@@ -137,12 +139,20 @@
       "sha256": "36dceea0887494143a456db1caabb8c78c856af97c78121ec0aa0024eec2835f"
     },
     {
+      "path": ".vercel/project.json",
+      "sha256": "0a17b98fa6ae09935e9bddfada70bc4120743baeceaf0eb350a39a4e9772b31b"
+    },
+    {
+      "path": ".vercel/README.txt",
+      "sha256": "f5d1ed0f5032ae128931f46459b5faa1af6319fc2dfb3e7a5fe54a84bf93dbd6"
+    },
+    {
       "path": "app/cookie/page.tsx",
       "sha256": "c388f624fda0b5911634eafe98fd011fb5e3967b6f4e2e4bb45b82a7ce0242fc"
     },
     {
       "path": "app/globals.css",
-      "sha256": "aae6e6289088752ce3ad3de15d4329fac48e3f90791a9fcac04d488d7679a017"
+      "sha256": "301d4052c650c4b419d9ab5a2ede7d0942a980bf69adbcf7d38c13ba17ae0983"
     },
     {
       "path": "app/layout.tsx",
@@ -174,7 +184,7 @@
     },
     {
       "path": "audit/accessibility_wcag.txt",
-      "sha256": "7ac99cea730b5ca4591f35e084969911c33a0c0643b25e673988a6730ad4fdbb"
+      "sha256": "65dd4ceae5479848e2f61c6ff117f1f1e10a8c25416e294c48bf6f59855e5ac5"
     },
     {
       "path": "audit/build_typecheck.txt",
@@ -190,31 +200,31 @@
     },
     {
       "path": "audit/form_validation.txt",
-      "sha256": "37dd327492967ca8b3ed25d187144050be0dd2d6ee9dfd3073f28133f0573232"
+      "sha256": "c8f855e29b822552c64ed6fc8d2c982efeedf19ca2a83c679cebfa636e8e93a8"
     },
     {
       "path": "audit/navigation_anchors.txt",
-      "sha256": "48d00edf1a8de2602e26c48110e80f3eaaa6988b99f810933feb4b97cc04535c"
+      "sha256": "fb61762bb302fa275d995be65ad342d94fd4daa5ff2da87a9f8a6fc683dd1d68"
     },
     {
       "path": "audit/performance_memory.txt",
-      "sha256": "5bc9e2ed714e472177d34f62896b91944e528e08eed6580f039fe6538fa229cd"
+      "sha256": "0f553b90906606f5674c868944b71b32e258a5b1fe56785efe4a46a5bfae04c2"
     },
     {
       "path": "audit/responsive_320_4k.txt",
-      "sha256": "8f998a055877625053c340b8139729133bf81cd5705aa2003b3c5e24aa9a9cdc"
+      "sha256": "1ec4be5851e8d92fe769f6cf365f8a1581890a9ef0d71310aa62e14fffa292d6"
     },
     {
       "path": "audit/secrets_leak_check.txt",
-      "sha256": "e1db17634ee359b8fc1a43a54007e0a4e15f6998a312b593a6c2625f25def3ce"
+      "sha256": "82458bd3b4d533b81791f2b482709c422ac687b0f07b41767bdbb5ff8f044c65"
     },
     {
       "path": "audit/security_xss_injection.txt",
-      "sha256": "482ec32556f0d9a1118df8200e35dd96f418a65550ae09dc48153db6ca41d4b2"
+      "sha256": "2181d7384a617c2254776311f5584a2aca7e9429db29ed1f163f88574abe0fd3"
     },
     {
       "path": "audit/seo_metadata.txt",
-      "sha256": "2662f586cfbf483f0db7423131e835ec034de04e7a4e8d815286d3f9bd89b0b9"
+      "sha256": "532a745be8e9fb818e4dbb85b4dd9b45ec0a03032cecb85f6baffd7e56fb8e9f"
     },
     {
       "path": "BRIEF.json",
@@ -238,15 +248,15 @@
     },
     {
       "path": "components/Hero.tsx",
-      "sha256": "2acf8af13e2e79718cb1b45a038a34ad9f49f94ce269dbbc3176527d9b3dd2ab"
+      "sha256": "503be08f0ed7822b342f2a1cc2ea570edb2cd63bc0a650675685af24463e986c"
     },
     {
       "path": "components/MortgageCalculator.tsx",
-      "sha256": "4fd3501a6dc964444b645a7a2aa3a5964bc161350da46756dc347ab308725393"
+      "sha256": "7fbb99f61e5cad8059a822121d694eb85eb3fbe0b0c94b6ac82dae051fe65f19"
     },
     {
       "path": "components/Navbar.tsx",
-      "sha256": "9eb47a39c23bc4690d32bd04ff016b39f9819b49f766154cf5913913bef10b0a"
+      "sha256": "6f1a7154a803dccd8f5fb00f0b100aa03e10a828718c5770592768962ee82138"
     },
     {
       "path": "components/PartnerStrip.tsx",
@@ -270,7 +280,7 @@
     },
     {
       "path": "components/StudioServices.tsx",
-      "sha256": "c806932c50c659bc7177dbfca4a3e14a10c91a16ebd260c6992a5655a7ecc5c6"
+      "sha256": "12239e701283089ed2eb6e22c3a5d1dd86538d80bd26798699e6b993d71cc316"
     },
     {
       "path": "components/TeamSection.tsx",
@@ -346,7 +356,7 @@
     },
     {
       "path": "scripts/audit_a11y.js",
-      "sha256": "51fbcbb77e90bc950e94479eb23cd6488edeb97389663cd5c7087e7b3832b503"
+      "sha256": "86ac44d65f2619ef4aeb1d1d8bbb556a94b951fc6496393b34cb20147921284d"
     },
     {
       "path": "scripts/audit_form.js",
@@ -386,7 +396,7 @@
     },
     {
       "path": "tsconfig.tsbuildinfo",
-      "sha256": "506af7c7c8ce53d4ad3243b4df335c1d2297ac652aa3a3384e784e6f74409b19"
+      "sha256": "395d961122616743dbec931dd7b558519736d5f45cff517de7f9665283137517"
     }
   ]
 }

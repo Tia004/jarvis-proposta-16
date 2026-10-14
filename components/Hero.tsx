@@ -38,10 +38,11 @@ export default function Hero({ onSearch }: HeroProps) {
 
       <div className="container" style={{ position: 'relative', zIndex: 3 }}>
         <div className="hero-content">
-          {/* Eyebrow Pill */}
+          {/* Architectural Metadata Badge */}
           <div className="hero-pill">
-            <i className="bi bi-shield-check" aria-hidden="true"></i>
-            <span>Approccio Boutique: Pochi Immobili, Qualità Certificata</span>
+            <span className="hero-coord-badge">45°24&apos;N 11°52&apos;E</span>
+            <span className="hero-pill-divider">·</span>
+            <span>Portfolio Selezionato a Padova, Venezia e Riviera del Brenta</span>
           </div>
 
           {/* Editorial Headline */}
@@ -57,12 +58,12 @@ export default function Hero({ onSearch }: HeroProps) {
           {/* Hero CTAs */}
           <div className="hero-buttons">
             <a href="#immobili" className="btn btn-primary btn-lg">
-              <i className="bi bi-search" aria-hidden="true"></i>
-              <span>Esplora Immobili Selezionati</span>
+              <i className="bi bi-grid-3x3" aria-hidden="true"></i>
+              <span>Esplora Portfolio</span>
             </a>
-            <a href="#contatti" className="btn btn-secondary btn-lg" style={{ backgroundColor: 'rgba(255,255,255,0.92)' }}>
-              <i className="bi bi-calculator" aria-hidden="true"></i>
-              <span>Richiedi Valutazione Gratuita</span>
+            <a href="#contatti" className="btn btn-secondary btn-lg">
+              <i className="bi bi-shield-check" aria-hidden="true"></i>
+              <span>Valutazione Riservata</span>
             </a>
           </div>
 

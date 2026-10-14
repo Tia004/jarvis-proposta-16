@@ -2,7 +2,7 @@
 AUDIT: ACCESSIBILITY (WCAG 2.2 AA) & ICON INTEGRITY VERIFICATION
 Project: Veneto Case - Immobili Selezionati in Veneto (WH-16)
 Command: node scripts/audit_a11y.js
-Executed At: 2026-10-14T00:16:33.700Z
+Executed At: 2026-10-14T00:57:03.525Z
 Status: PASSED
 ================================================================================
 
@@ -11,15 +11,15 @@ Status: PASSED
   [PASS] Strict Zero-SVG constraint satisfied across rendered DOM.
   Rendered Emoji count: 0
   [PASS] Strict Zero-Emoji constraint satisfied across rendered DOM.
-  Bootstrap Icons font icon usages: 219
+  Bootstrap Icons font icon usages: 217
   [PASS] Free font/CSS icon package (Bootstrap Icons webfont) implemented without inline SVGs.
 
 2. COLOR CONTRAST RATIOS (WCAG AA >= 4.5:1 for normal text):
-  [PASS] Terracotta (#C84814) on Pure White (#FFFFFF): 4.78:1 (Required >= 4.5:1)
-  [PASS] White (#FFFFFF) on Terracotta (#C84814): 4.78:1 (Required >= 4.5:1)
-  [PASS] Charcoal Text (#333333) on Pure White (#FFFFFF): 12.63:1 (Required >= 4.5:1)
-  [PASS] Muted Text (#4A4A4A) on Pure White (#FFFFFF): 8.86:1 (Required >= 4.5:1)
-  [PASS] Secondary Charcoal (#222222) on Pure White (#FFFFFF): 15.91:1 (Required >= 4.5:1)
+  [PASS] Graphite Charcoal (#2E322F) on Pure White (#FFFFFF): 13.02:1 (Required >= 4.5:1)
+  [PASS] White (#FFFFFF) on Graphite Charcoal (#2E322F): 13.02:1 (Required >= 4.5:1)
+  [PASS] Lagoon Emerald (#0F6F63) on Pure White (#FFFFFF): 6.04:1 (Required >= 4.5:1)
+  [PASS] Dark Slate Text (#383C39) on Pure White (#FFFFFF): 11.21:1 (Required >= 4.5:1)
+  [PASS] Graphite Charcoal (#2E322F) on Travertine (#F7F7F5): 12.13:1 (Required >= 4.5:1)
 
 3. KEYBOARD ACCESSIBILITY & FOCUS MANAGEMENT:
   [PASS] Prominent :focus-visible ring defined in CSS: true
