@@ -1,12 +1,10 @@
 {
   "schema_version": 1,
-  "summary": "Proposta digitale indipendente per Veneto Case | Immobili selezionati in Veneto (C.F./P.IVA 04497920282, REA PD-394571). Architettura Next.js 16.4 (Turbopack) con React 19, TypeScript e Bootstrap Icons WebFont (Zero SVG, Zero Emoji). Onepage con portfolio dinamico a 9 immobili reali, processo di compravendita in 5 fasi, rete di 7 filiali del Veneto, 9 recensioni Google verificate, calcolatore mutuo francese, form di contatto dimostrativo conforme GDPR e pagine legali autonome. Audit locale completo (11 report in audit/) con superamento al 100%. Fase 1 completata in locale.",
-  "repository": "https://github.com/owner/jarvis-proposta-16 (In attesa di autorizzazione Fase 2)",
-  "commit": "7a737748a982559591f510700384ca36cb5e3dbb",
-  "production_url": "",
-  "blockers": [
-    "Fase 1 completata in locale. Creazione repository remota GitHub e pubblicazione Vercel bloccate in attesa di specifica autorizzazione del proprietario come prescritto dal brief."
-  ],
+  "summary": "Proposta digitale indipendente per Veneto Case | Immobili selezionati in Veneto (C.F./P.IVA 04497920282, REA PD-394571). Architettura Next.js 16.4 (Turbopack) con React 19, TypeScript e Bootstrap Icons WebFont (Zero SVG, Zero Emoji). Onepage con portfolio dinamico a 9 immobili reali, processo di compravendita in 5 fasi, rete di 7 filiali del Veneto, 9 recensioni Google verificate, calcolatore mutuo francese, form di contatto dimostrativo conforme GDPR e pagine legali autonome. Audit locale completo (11 report in audit/) con superamento al 100%. Pubblicazione completata su GitHub e produzione Vercel attiva.",
+  "repository": "https://github.com/Tia004/jarvis-proposta-16",
+  "commit": "3721eb8355fa08d3e852924fa68b7596ff1e57c6",
+  "production_url": "https://veneto-case-immobili-selezionati-in.vercel.app",
+  "blockers": [],
   "tests": [
     {
       "name": "Build & TypeCheck Turbopack",
