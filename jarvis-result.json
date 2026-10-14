@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "summary": "Proposta digitale indipendente per Veneto Case | Immobili selezionati in Veneto (C.F./P.IVA 04497920282, REA PD-394571). Architettura Next.js 16.4 (Turbopack) con React 19, TypeScript e Bootstrap Icons WebFont (Zero SVG, Zero Emoji). Onepage con portfolio dinamico a 9 immobili reali, processo di compravendita in 5 fasi, rete di 7 filiali del Veneto, 9 recensioni Google verificate, calcolatore mutuo francese, form di contatto dimostrativo conforme GDPR e pagine legali autonome. Audit locale completo (11 report in audit/) con superamento al 100%. Fase 1 completata in locale.",
+  "repository": "https://github.com/owner/jarvis-proposta-16 (In attesa di autorizzazione Fase 2)",
+  "commit": "7a737748a982559591f510700384ca36cb5e3dbb",
+  "production_url": "",
+  "blockers": [
+    "Fase 1 completata in locale. Creazione repository remota GitHub e pubblicazione Vercel bloccate in attesa di specifica autorizzazione del proprietario come prescritto dal brief."
+  ],
+  "tests": [
+    {
+      "name": "Build & TypeCheck Turbopack",
+      "command": "npm run build && npx tsc --noEmit",
+      "passed": true,
+      "evidence": "audit/build_typecheck.txt"
+    },
+    {
+      "name": "Navigazione, Ancore e Pagine Legali",
+      "command": "node scripts/audit_navigation.js",
+      "passed": true,
+      "evidence": "audit/navigation_anchors.txt"
+    },
+    {
+      "name": "Validazione Form & Modalità Dimostrativa",
+      "command": "node scripts/audit_form.js",
+      "passed": true,
+      "evidence": "audit/form_validation.txt"
+    },
+    {
+      "name": "Design Responsive 320px - 4K e Fluid Typography",
+      "command": "node scripts/audit_responsive.js",
+      "passed": true,
+      "evidence": "audit/responsive_320_4k.txt"
+    },
+    {
+      "name": "Accessibilità WCAG 2.2 AA, Zero-SVG e Zero-Emoji",
+      "command": "node scripts/audit_a11y.js",
+      "passed": true,
+      "evidence": "audit/accessibility_wcag.txt"
+    },
+    {
+      "name": "Metadati SEO, OpenGraph e Schema.org JSON-LD",
+      "command": "node scripts/audit_seo.js",
+      "passed": true,
+      "evidence": "audit/seo_metadata.txt"
+    },
+    {
+      "name": "Audit Dipendenze e Licenze Open Source",
+      "command": "npm audit && npm list",
+      "passed": true,
+      "evidence": "audit/dependencies_audit.txt"
+    },
+    {
+      "name": "Sicurezza Codice Locale, XSS & Security Headers",
+      "command": "node scripts/audit_security.js",
+      "passed": true,
+      "evidence": "audit/security_xss_injection.txt"
+    },
+    {
+      "name": "Scansione Igiene Segreti & Assenza Credenziali",
+      "command": "node scripts/audit_secrets.js",
+      "passed": true,
+      "evidence": "audit/secrets_leak_check.txt"
+    },
+    {
+      "name": "Performance TTFB, Memoria e Asset Footprint",
+      "command": "node scripts/audit_performance.js",
+      "passed": true,
+      "evidence": "audit/performance_memory.txt"
+    },
+    {
+      "name": "Studio Comparativo Strutturale goreela.it",
+      "command": "cat audit/comparison_goreela.md",
+      "passed": true,
+      "evidence": "audit/comparison_goreela.md"
+    }
+  ],
+  "functions": [
+    "Navigazione sticky con scroll-spy dinamico per sezioni (#immobili, #processo, #servizi, #filiali, #recensioni, #team, #calcolatore, #contatti)",
+    "Menu mobile drawer accessibile con gestione tastiera, focus indicator e chiusura su tasto ESC",
+    "Hero editoriale con value proposition e motore di ricerca interattivo a 4 criteri (tipologia, provincia, prezzo max, ricerca testo)",
+    "Portfolio dinamico con catalogo di 9 immobili reali estratti da BRIEF.json e indicizzazione metrica (vani, bagni, m²)",
+    "Slider orizzontale controllabile con pulsanti di navigazione laterale e compatibilità touch/mousewheel",
+    "Barra di ricerca testuale in tempo reale per filtraggio istantaneo nel catalogo immobili",
+    "Filtro per categorie tipologiche (Tutti gli Immobili, Ville & Rustici di Pregio, Appartamenti & Attici, Terreni Edificabili)",
+    "Contatore dinamico dei risultati visibili e stato vuoto accessibile con pulsante di reset rapido",
+    "Modale scheda immobile dialog accessibile (role='dialog', aria-modal='true') con specifica completa e dettagli catastali/energetici",
+    "Pulsante WhatsApp rapido contestualizzato con testo precompilato recante titolo immobile, RIF e prezzo",
+    "Processo di compravendita in 5 fasi con schede interattive e approfondimento dinamico (Due Diligence, Stima, Marketing, Negotiaz., Rogito)",
+    "Selettore interattivo delle 7 filiali venete (Padova e Riviera del Brenta) con filtro per provincia",
+    "Chiamata diretta e contatto WhatsApp dedicato per ognuna delle 7 filiali del Veneto",
+    "Riprova sociale con 9 recensioni Google certificate da BRIEF.json e filtro rapido per filiale di competenza",
+    "Sezione team referenti con monogrammi eleganti, filiale di appartenenza e nota di trasparenza deontologica",
+    "Simulatore interattivo di calcolo rata mutuo con formula francese di ammortamento, slider importo/durata/tasso e riepilogo piano",
+    "Sezione filosofia boutique e 4 pilastri di servizio con CTA per valutazione immobiliare gratuita",
+    "Fascia partner istituzionali e creditizi con dichiarazione di trasparenza sui diritti di marchio",
+    "Modulo di contatto con validazione client-side su 7 campi (nome, cognome, email RFC5322, telefono >=8 cifre, filiale, messaggio, privacy)",
+    "Ambiente dimostrativo protetto: banner informativo esplicito che garantisce la non trasmissione di dati personali a server esterni",
+    "Banner consenso cookie conforme GDPR con salvataggio delle preferenze in localStorage e blocco script non necessari",
+    "Informativa sulla Privacy autonoma conforme Regolamento UE 2016/679 (/privacy)",
+    "Informativa estesa Cookie Policy con tabella dettagliata cookie tecnici (/cookie)",
+    "Termini e Condizioni generali di utilizzo del sito e declinazione di responsabilità dimostrativa (/termini)",
+    "Metadati SEO completi con title unici, description contestuali, OpenGraph e Twitter Cards per tutte le pagine",
+    "Dati strutturati Schema.org JSON-LD per RealEstateAgent con P.IVA 04497920282, orari di apertura, filiali e telefono",
+    "Sitemap XML dinamica conforme protocollo sitemaps.org (/sitemap.xml)",
+    "File robots.txt con direttive di scansione e riferimento sitemap (/robots.txt)",
+    "Pagina personalizzata 404 Not Found con rientro guidato alla homepage",
+    "Skip link accessibile (#main-content) e supporto screen reader completo"
+  ],
+  "design": [
+    "Palette rigorosa: Terracotta Orange (#C84814), Bianco Puro (#FFFFFF) e Grigi antracite (#333333 - #555555)",
+    "Tipografia editoriale coerente: Playfair Display per intestazioni di prestigio e Plus Jakarta Sans per l'interfaccia utente",
+    "Scala tipografica fluida con interpolazione clamp() per garantire proporzioni armoniose a qualsiasi risoluzione",
+    "Sistema di spaziatura modulare fluida da --space-xs a --space-section basato su token CSS centralizzati",
+    "Griglia responsive fluida testata da 320px (smartphone compatti) fino a 3840px (display 4K ultra-wide)",
+    "Contenimento a larghezza massima (--container-max: 1360px) per prevenire dispersione visiva su schermi 4K",
+    "Hero monumentale con layout editoriale split, texture di sfondo architettonica e badge di autenticità",
+    "Card immobili con elevazione a strati, angoli arrotondati calibrati (--border-radius-md) e glassmorphism",
+    "Badge semantici distintivi per classi energetiche A4 (verde smeraldo), D (oro antico), F (ambra scura)",
+    "Slider orizzontale nativo a scorrimento controllato con indicatori visivi e pulsanti arrotondati con icona font",
+    "Transizioni fluide e progressive con funzione cubica personalizzata cubic-bezier(0.16, 1, 0.3, 1)",
+    "Hover progressivi con sollevamento sottile (translateY) e ombreggiatura calda terracotta su tutti i componenti interattivi",
+    "Contrasto cromatico rigorosamente verificato WCAG 2.2 AA (rapporto >= 4.78:1 per terracotta, >= 12.6:1 per testo scuro)",
+    "Contorni di focus visibili ad alto contrasto (:focus-visible outline 3px solido con offset) per navigazione da tastiera",
+    "Supporto integrale prefers-reduced-motion che disattiva transizioni e animazioni per utenti sensibili al movimento",
+    "Iconografia realizzata al 100% tramite pacchetto webfont CSS gratuito (Bootstrap Icons) con rendering vettoriale nitido",
+    "Zero tag SVG nel DOM renderizzato, prevenendo frammentazione DOM e richieste HTTP isolate",
+    "Zero emoji nell'intera applicazione, mantenendo un tono estetico austero, autorevole ed editoriale",
+    "Navbar sticky con effetto satinato backdrop-filter: blur(12px) e contrazione visiva dinamica allo scroll",
+    "Footer istituzionale a 4 colonne con gerarchia chiara, dati societari obbligatori e collegamenti legali dedicati",
+    "Layout referenti del team con eleganti monogrammi grafici bicolore e separatori geometrici",
+    "Timeline orizzontale/verticale del processo con numeratori a bolla dorata e card descrittive rifinite",
+    "Form con etichette semantiche, campi con stati focus terracotta e messaggi di errore contestuali ben visibili",
+    "Badge 'Proposta Dimostrativa non ufficiale' integrato con discrezione nell'header e nel footer per totale trasparenza"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "36dceea0887494143a456db1caabb8c78c856af97c78121ec0aa0024eec2835f"
+    },
+    {
+      "path": "app/cookie/page.tsx",
+      "sha256": "c388f624fda0b5911634eafe98fd011fb5e3967b6f4e2e4bb45b82a7ce0242fc"
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "aae6e6289088752ce3ad3de15d4329fac48e3f90791a9fcac04d488d7679a017"
+    },
+    {
+      "path": "app/layout.tsx",
+      "sha256": "28f8289906bb83e54636f8e827bd2ac8831d8d2cbc6dea80652f74395688c354"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "sha256": "1b8f61ed5e153bbd8f5cbc8314b4855beceee269374319bf92aa8ffc292d3c4b"
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "9614d512c2f00bca61bc343e5fbea6094798a330a9e71fd44d4b41f94b053b5f"
+    },
+    {
+      "path": "app/privacy/page.tsx",
+      "sha256": "2665cc8de2cb674b1332346e1ab49e55e78c0518b5256353bb4d8ed35bcc7f85"
+    },
+    {
+      "path": "app/robots.ts",
+      "sha256": "25d16b585f5c78c4d1d81251d89ff59f156d5e4513dec4f66416c0bac5ffd40d"
+    },
+    {
+      "path": "app/sitemap.ts",
+      "sha256": "82e835a6704fa96e2d2d5c64214b4efd39e16286d299ca2c7325d908f551780e"
+    },
+    {
+      "path": "app/termini/page.tsx",
+      "sha256": "1f0d9f5fcf5529492f3f7f4be3d00545d3c9b04b2ddc21dad72fc89472b14c7f"
+    },
+    {
+      "path": "audit/accessibility_wcag.txt",
+      "sha256": "7ac99cea730b5ca4591f35e084969911c33a0c0643b25e673988a6730ad4fdbb"
+    },
+    {
+      "path": "audit/build_typecheck.txt",
+      "sha256": "2958521b4ea289ff48eb6c8cce4ce0c4fb48fd4d961f6b0ae1ddb5fc648e8331"
+    },
+    {
+      "path": "audit/comparison_goreela.md",
+      "sha256": "578fafced8559ead0c6686baefe744150d44dca24e73f8d2a2c4b9ecd8318c49"
+    },
+    {
+      "path": "audit/dependencies_audit.txt",
+      "sha256": "510df9c359e2cb8314c9d6b50c1e5873ee1ff6fd43634afb5a114bb30a97ca8a"
+    },
+    {
+      "path": "audit/form_validation.txt",
+      "sha256": "37dd327492967ca8b3ed25d187144050be0dd2d6ee9dfd3073f28133f0573232"
+    },
+    {
+      "path": "audit/navigation_anchors.txt",
+      "sha256": "48d00edf1a8de2602e26c48110e80f3eaaa6988b99f810933feb4b97cc04535c"
+    },
+    {
+      "path": "audit/performance_memory.txt",
+      "sha256": "5bc9e2ed714e472177d34f62896b91944e528e08eed6580f039fe6538fa229cd"
+    },
+    {
+      "path": "audit/responsive_320_4k.txt",
+      "sha256": "8f998a055877625053c340b8139729133bf81cd5705aa2003b3c5e24aa9a9cdc"
+    },
+    {
+      "path": "audit/secrets_leak_check.txt",
+      "sha256": "e1db17634ee359b8fc1a43a54007e0a4e15f6998a312b593a6c2625f25def3ce"
+    },
+    {
+      "path": "audit/security_xss_injection.txt",
+      "sha256": "482ec32556f0d9a1118df8200e35dd96f418a65550ae09dc48153db6ca41d4b2"
+    },
+    {
+      "path": "audit/seo_metadata.txt",
+      "sha256": "2662f586cfbf483f0db7423131e835ec034de04e7a4e8d815286d3f9bd89b0b9"
+    },
+    {
+      "path": "BRIEF.json",
+      "sha256": "936687e5a5ab4e020b53b4ec2324af9936ac8e976d3cdf0712b217c0423468d1"
+    },
+    {
+      "path": "components/BranchSelector.tsx",
+      "sha256": "6e4fc3947dfe3584c25a81bcb0b06c6bac8184739458e1354d397c3b1e55fc08"
+    },
+    {
+      "path": "components/ContactForm.tsx",
+      "sha256": "07acd2a1bf45f6285a0032f23d416ef0dfb52d2682ee46daf2523be194d8701d"
+    },
+    {
+      "path": "components/CookieConsent.tsx",
+      "sha256": "77d474d6180607f34970ba62112938718e9c63439f461155ebb73ab1663e88f1"
+    },
+    {
+      "path": "components/Footer.tsx",
+      "sha256": "05f665cf77fa0b6afffcd341f5e3559d8721e944f3582403386aa8c57ea080aa"
+    },
+    {
+      "path": "components/Hero.tsx",
+      "sha256": "2acf8af13e2e79718cb1b45a038a34ad9f49f94ce269dbbc3176527d9b3dd2ab"
+    },
+    {
+      "path": "components/MortgageCalculator.tsx",
+      "sha256": "4fd3501a6dc964444b645a7a2aa3a5964bc161350da46756dc347ab308725393"
+    },
+    {
+      "path": "components/Navbar.tsx",
+      "sha256": "9eb47a39c23bc4690d32bd04ff016b39f9819b49f766154cf5913913bef10b0a"
+    },
+    {
+      "path": "components/PartnerStrip.tsx",
+      "sha256": "4555e910e7b83a2571945955a5f990f783601081ec40aceea06908f6ae49b4b1"
+    },
+    {
+      "path": "components/ProcessTimeline.tsx",
+      "sha256": "9c79a1db622fc933581f987ca4a3d52e6f34edd9019f45a94842f0ca60b516a2"
+    },
+    {
+      "path": "components/PropertyModal.tsx",
+      "sha256": "b3f4dbe7b870e32806ddc0a586e5d9c9d1c01ff43a378084dc538e0ba3d4d357"
+    },
+    {
+      "path": "components/PropertySlider.tsx",
+      "sha256": "819d0fdb8544175f236cd33e76dd66dd6a677c7a3327c8241d607cc43320ceac"
+    },
+    {
+      "path": "components/ReviewFilter.tsx",
+      "sha256": "b6e18e79e210a9183136d1bedf111c1e8938f522666e7343ae67309d6a0ea190"
+    },
+    {
+      "path": "components/StudioServices.tsx",
+      "sha256": "c806932c50c659bc7177dbfca4a3e14a10c91a16ebd260c6992a5655a7ecc5c6"
+    },
+    {
+      "path": "components/TeamSection.tsx",
+      "sha256": "b0d2e18df63fb05d87b7b4a5a1cd319aa44ac4841ee0c6f67ee4c9b8cb437985"
+    },
+    {
+      "path": "data/branches.ts",
+      "sha256": "c20a5f7cb9b88a54185b579c23501701293f5a834940ffe9836db63900f50370"
+    },
+    {
+      "path": "data/properties.ts",
+      "sha256": "77cd12d174ac160893cc8b38b0e169d113baf3c77cdb41336fc14350030e365e"
+    },
+    {
+      "path": "data/reviews.ts",
+      "sha256": "198e92b7f5c349148853902e49e01ac80d9bc40c9da58543a8f7b94b57f961a1"
+    },
+    {
+      "path": "data/team.ts",
+      "sha256": "4eb5b33a46adefd2ba8ca7fc67616102ae3eeda5692ac7a14677f878bb7befd6"
+    },
+    {
+      "path": "JARVIS_SPEC.md",
+      "sha256": "4a3e6c6d6cbcab31aec1aed36f42bd1b42a850cc9bb1bf35b6f43c4425392ffe"
+    },
+    {
+      "path": "next-env.d.ts",
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+    },
+    {
+      "path": "next.config.mjs",
+      "sha256": "0a98f1c4e397502846cf8414fa96950b97cebc39b88fd709af1cf7087d9ed5c9"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "26a5e59831fc06fea76d2bf30a6eb46e14ceb64927ecbe3f0e451c944109ffe5"
+    },
+    {
+      "path": "package.json",
+      "sha256": "ac75dd24c8e5dcd193df4659582fcd027af667874207b5d09bb7de5171ef7cc2"
+    },
+    {
+      "path": "public/images/hero_villa.jpg",
+      "sha256": "16b3ecd04cce7b00621b5976c8aa0c73861c997d6903016468f9f56e417b4b42"
+    },
+    {
+      "path": "public/images/og_cover.jpg",
+      "sha256": "16b3ecd04cce7b00621b5976c8aa0c73861c997d6903016468f9f56e417b4b42"
+    },
+    {
+      "path": "public/images/prop_adria.jpg",
+      "sha256": "16b3ecd04cce7b00621b5976c8aa0c73861c997d6903016468f9f56e417b4b42"
+    },
+    {
+      "path": "public/images/prop_cantarana.jpg",
+      "sha256": "3846adb214507cfbeaf731cb7c328a3352f80b708b139f29523ca7867e913560"
+    },
+    {
+      "path": "public/images/prop_mira.jpg",
+      "sha256": "7faaff6c671e31a656bcd9f3c9f1d0f9961330eb7c3d0715b8b91a12647ea94d"
+    },
+    {
+      "path": "public/images/prop_polverarabifamiliare.jpg",
+      "sha256": "7faaff6c671e31a656bcd9f3c9f1d0f9961330eb7c3d0715b8b91a12647ea94d"
+    },
+    {
+      "path": "public/images/prop_saonara.jpg",
+      "sha256": "3846adb214507cfbeaf731cb7c328a3352f80b708b139f29523ca7867e913560"
+    },
+    {
+      "path": "public/images/prop_vigonzaterrazzo.jpg",
+      "sha256": "3846adb214507cfbeaf731cb7c328a3352f80b708b139f29523ca7867e913560"
+    },
+    {
+      "path": "scripts/audit_a11y.js",
+      "sha256": "51fbcbb77e90bc950e94479eb23cd6488edeb97389663cd5c7087e7b3832b503"
+    },
+    {
+      "path": "scripts/audit_form.js",
+      "sha256": "5d071ff0d23350bb88e15e5d92318203fc1eff0bd6d5abc0da5b235da519d398"
+    },
+    {
+      "path": "scripts/audit_navigation.js",
+      "sha256": "7913b5ed6f26e06e7f244662b2d35a199ea1afc673529395bc8fe83afb181bc6"
+    },
+    {
+      "path": "scripts/audit_performance.js",
+      "sha256": "015a15fa9bb4d2a8e4ec8da298709011b63c7e7065dea4054850c04d48deefd1"
+    },
+    {
+      "path": "scripts/audit_responsive.js",
+      "sha256": "9ffb7a9e2258c8be5575a3ec68a926b36e98390f70a9ba3cd3793e9735d137e7"
+    },
+    {
+      "path": "scripts/audit_secrets.js",
+      "sha256": "08b3bf1d4d1e13b1587a181fc36c0e54c8697e4b9a21b0446674d878f6ddb862"
+    },
+    {
+      "path": "scripts/audit_security.js",
+      "sha256": "4205f321d8ed8a03f707b949b8f489e2df65e8e52f06d03f51d7ea830cebae0c"
+    },
+    {
+      "path": "scripts/audit_seo.js",
+      "sha256": "ad5d1b3298dfc97e7bf9a46ab3d6e835bbd622a711a9f0b08daf9614405d8271"
+    },
+    {
+      "path": "scripts/generate_manifest.js",
+      "sha256": "1a6e9d9e796235edaa7c7e050b732f2cc99162f19c5b4adeea5a423bcf311e1e"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "b24da0d173a0cef45decc36feb63fa189fb87f31cbe5f96c7902ed4ec973396f"
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "sha256": "506af7c7c8ce53d4ad3243b4df335c1d2297ac652aa3a3384e784e6f74409b19"
+    }
+  ]
+}
